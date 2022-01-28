@@ -4,6 +4,7 @@ if systemctl is-active --quiet chronyd ; then
 	echo "##########################"
 	echo "### chronyd is RUNNING ###"
 	echo "##########################"
+	chronyc sources
 	exit 1
 fi
 
